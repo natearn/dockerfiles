@@ -11,4 +11,4 @@ COPY . .
 RUN chown -R node:node .
 USER node
 
-CMD bash
+CMD sh

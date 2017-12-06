@@ -3,7 +3,7 @@
 # change these for an easier experience
 IMAGE_NAME="$1"
 CONTAINER="$2"
-COMMAND="bash"
+COMMAND="sh"
 
 if docker inspect -f '{{.State.Running}}' "$CONTAINER" &> /dev/null
 then docker exec -it "$CONTAINER" "$COMMAND"
